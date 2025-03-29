@@ -16,5 +16,5 @@ This system provides the following core functionalities:
 - Add, edit, and delete rental properties with details like location, rent amount, and availability.
 - Maintain tenant details.
 - Query or Maintenance Requests.
-- Separate admin panel
+- Separate admin panel.
 
