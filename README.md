@@ -18,3 +18,11 @@ This system provides the following core functionalities:
 - Query or Maintenance Requests.
 - Separate admin panel.
 
+## 🛠 Tech Stack
+- **Frontend:**
+   + React.js (for UI)
+   + CSS 
+- **Backend and Database:**
+    + Firebase Authentication
+    + Firebase Firestore
+    + Firebase Storage
