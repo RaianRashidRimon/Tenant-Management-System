@@ -28,5 +28,5 @@ This system provides the following core functionalities:
     + Firebase Storage
 ## 📌 Use Case Diagram
 <div align="center">
-  <img src="UI & Use Case Diagram/Use Case Diagram.jpg" alt="Use Case Diagram" width="500"/>
+  <img src="UI & Use Case Diagram/Use Case Diagram.png" alt="Use Case Diagram" width="500"/>
 </div>
