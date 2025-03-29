@@ -26,3 +26,7 @@ This system provides the following core functionalities:
     + Firebase Authentication
     + Firebase Firestore
     + Firebase Storage
+## 📌 Use Case Diagram
+<div align="center">
+  <img src="UI & Use Case Diagram/Use Case Diagram.jpg" alt="Use Case Diagram" width="500"/>
+</div>
