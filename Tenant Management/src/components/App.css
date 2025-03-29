@@ -1,0 +1,1183 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url("../images/bodyBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+.Footer{
+
+}
+
+/*navbar */
+.navbar{
+  position: sticky;
+  top: 0;
+  margin-top: 4px;
+  text-align: center;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  background: #282c34;
+  padding: 10px 16px;
+  z-index: 5000;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on small screens */
+     /* Adjust font size for smaller screens*/
+      font-size: 0.8rem;
+  }
+}
+.navbar-logo{
+  color: white;
+  font-size: 20px;
+}
+.navbar-menu{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  align-items: center;
+}
+.navbar-menu li a{
+  text-decoration: none;
+  color: white;
+}
+/*logout*/
+/* General styles for dropdown button */
+.dropdown-item{
+position: relative;
+}
+.dropdown-button {
+  font-family: "Times New Roman";
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: inherit;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Styles for active (pressed) state of dropdown button */
+.dropdown-button.active {
+  background-color: black; /* Same as dropdown menu background */
+  color: white;
+}
+/* Dropdown menu styles */
+.dropdown-menu {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  right: 0;
+  background-color: black;
+  min-width: 120px;
+  width: 213px;
+  z-index: 1000;
+}
+.dropdown-menu p {
+  font-size: inherit;
+  margin-top: 30px;
+  font-weight: 600;
+  color: white;
+}
+.dropdown-menu p::after {
+  content: '';
+  height: 1px;
+  width: 85%;
+  background-color: white;
+  display: inline-flex;
+  margin: 16px 11px;
+}
+.dropdown-menu .logout-button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+.logout-button {
+  font-size: inherit;
+  font-weight: 800;
+  border-radius: 6px;
+  width: 90%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.dropdown-menu .logout-button:hover {
+  background-color: orangered;
+  transition: 0.4s;
+  color: white;
+}
+/*payments*/
+.payment-container{
+
+}
+/*pagination*/
+.pagination {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  background: rgb(0,0,0,0.8);
+  border: none;
+  color: white;
+  padding: 2px 4px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 11px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  font-weight: 700;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+  color: #000;
+  transform: scale(1.05);
+}
+.pagination button:disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+.pagination button.active {
+  background-color: #C0C0C0;
+  color: black;
+  border-color: #007bff;
+  transform: scale(1.1);
+}
+
+.pagination button:focus {
+  outline: none;
+  box-shadow: 0 0 3px #007bff;
+}
+
+
+/*that section beneath the navbar at every page*/
+.container{
+  display: flex;
+  flex-direction: column;
+  background: rgb(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-top: 7px;
+  margin-left: 3px;
+  margin-right: 4px;
+  height: 750px;
+}
+/*both login container and signup*/
+.admin-container,.login-container, .signup-container{
+  overflow: auto;
+  display: flex;
+  height: 60%;
+  width: 70%;
+}
+.redirect-signup{
+  text-align: center;
+  margin:15px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+.redirect-signup a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+.redirect-signup a:hover{
+  color: #f60838;
+  text-decoration: underline;
+}
+.login-container .left{
+  background-image: url("../images/login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+}
+.admin-container .left{
+  background-image: url("../images/adminlogin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+}
+.signup-container .right{
+  background-image: url("../images/signup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+}
+.admin-container .right,.login-container .right{
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 15px;
+  width: 50%;
+  background: rgb(255,255,255,0.22);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.7);
+  padding: 40px 20px 40px 5px;
+}
+.admin-container .right{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 60px;
+}
+.signup-container .left{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 50%;
+  background: rgb(255,255,255,0.14);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.7);
+  padding: 40px 5px 40px 0;
+}
+.login-container .right form,
+.signup-container .left form,
+.admin-container .right form{
+  width: 80%;
+}
+.right h2{
+  font-style: italic;
+  font-size: 33px;
+  margin-bottom: 13px;
+
+}
+.left h2{
+  font-style: italic;
+  font-size: 27px;
+  margin-bottom: 13px;
+  color: white;
+}
+.login-container .right form label,
+.signup-container .left form label,
+.admin-container .right form label{
+  position: absolute;
+}
+.login-container .right form input,
+.signup-container .left form input,
+.admin-container .right form input{
+  outline: none;
+  border: none;
+  height: 25px;
+  border-radius: 3px;
+  border-bottom: 1px solid white;
+  background: transparent;
+  padding-left: 5px;
+}
+.login-container .right form input,
+.admin-container .right form input{
+  border: none;
+  background: rgb(0,0,0,0.7);
+  border-radius: 20px;
+  height: 37px;
+  padding-left: 20px;
+}
+.login-container .right form input:focus,
+.admin-container .right form input:focus,
+.signup-container .left form input:focus{
+  background-color: darkgray;
+}
+.login-container .right form input::placeholder,
+.admin-container .right form input::placeholder{
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+}
+.login-container .right form input:focus::placeholder,
+.admin-container .right form input:focus::placeholder{
+  color: black;
+  transition: 0.4s;
+}
+.signup-container .left form input::placeholder{
+  color: black;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.signup-container .left form input:focus
+{
+  border-bottom: 1px solid black;
+}
+.login-container .right form button,
+.signup-container .left form button,
+.admin-container .right form button{
+  width: 105%;
+  height: 29px;
+  margin-top: 25px;
+  margin-left: 5px;
+  border-radius: 7px;
+  border: none;
+  background-color: #e1e1e1;
+  font-size: 13px;
+  font-weight: bold;
+}
+.signup-container .left form button{
+ margin-left: 0;
+}
+.login-container .right form button:hover,
+.signup-container .left form button:hover,
+.admin-container .right form button:hover{
+  background-color: #57B550;
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduce the shadow to give a sunk in effect */
+  transition: 0.1s;
+}
+.signup-container .left form button:hover{
+  background-color: #FF5B1F;
+}
+.admin-container .right form button:hover{
+  background-color: #B8860B;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.icon{
+  position: absolute;
+  right: 30px;
+  margin-top: 11px;
+}
+.right .icon{
+  right: 42px;
+}
+.left .icon{
+  color: darkgray;
+}
+/*user profile*/
+/* Profile Container */
+.userProfile {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 66%;
+  align-items: center;
+  background: rgb(0,0,0,0.4);
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.userProfile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* User Photo */
+.userPhoto {
+  display: flex;
+  flex-direction: column;
+ margin: 30px 20px;
+}
+
+.userPhoto img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #FF4500;
+}
+
+/* User Info*/
+.userInfo {
+  flex: 2;
+  text-align: left;
+}
+
+.userInfo p {
+  color: white;
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.userInfo input {
+  background: transparent;
+  width: 92%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.userInfo button,.userPhoto button {
+  background-color: darkgray;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  padding: 10px 20px;
+  margin: 18px 10px 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.userPhoto button {
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.userInfo button:hover, .userPhoto button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.userInfo button:active, .userPhoto button:active {
+  transform: translateY(1px);
+}
+
+
+
+/*payment page*/
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  background: rgb(255,255,255,0.5);
+  box-shadow: 0 11px 16px rgba(0,0,0,0.4);
+  backdrop-filter: blur(9px);
+  border-radius: 7px;
+  width: 89%;
+  height: 87%;
+  margin:20px 10px;
+}
+
+.tenant{
+  flex: 2;
+}
+.owner{
+  flex: 1;
+}
+.tenant,
+.owner {
+  padding: 10px;
+}
+.owner::before{
+  content: "";
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background-color: #282c34;
+  position: absolute;
+  padding-bottom: 7px;
+}
+
+.tenant h2, .owner h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.tenant-payment-table,
+.owner-payment-table{
+  width: 90%;
+  border-collapse: separate;
+  margin: 10px 7px;
+}
+.tenant-payment-table{
+  width: 98%;
+}
+.scrollable{
+  height: 85%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.tenant-payment-table td, .owner-payment-table td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 17px;
+}
+
+.tenant-payment-table th, .owner-payment-table th{
+  position: sticky;
+  top:0;
+  background-color: #f2f2f2;
+  color: #555;
+  font-size: 17px;
+  font-weight: bold;
+  height: 32px;
+  border-radius: 3px;
+}
+
+
+.tenant-payment-table td button,
+.owner-payment-table td button{
+  background-color: #8FBC8F;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 90%;
+  font-weight: bold;
+}
+
+.tenant-payment-table td button:hover,
+.owner-payment-table td button:hover{
+  background-color: #228B22;
+  transition: 0.1s;
+}
+
+.undo-option {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  padding: 0 20px 0 3px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.undo-button {
+  font-weight: bold;
+  background-color: inherit;
+  color: darkslateblue;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 7px;
+  cursor: pointer;
+}
+
+.undo-button:hover {
+  font-size: 13px;
+  color: red;
+  text-decoration: underline;
+}
+
+.undo-message {
+  color: darkslateblue;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/*property*/
+
+.property-input::placeholder {
+  color: #999;
+  font-weight: bold;
+}
+.property-label {
+  font-weight: bold;
+  margin: 4px 5px;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.property-container{
+  overflow: auto;
+  width: 95%;
+  background: rgb(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.add-button,
+.save-button,
+.cancel-button,
+.edit-button,
+.delete-button,
+.tenant-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 5px;
+  font-weight: bold;
+}
+.add-button:hover,
+.save-button:hover,
+.cancel-button:hover,
+.edit-button:hover,
+.delete-button:hover,
+.tenant-button:hover{
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.4);
+}
+.add-button {
+  background-color: #5E8E5E;
+  color: white;
+}
+.add-button:hover{
+  background-color: #28a745;
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.4);
+}
+.save-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-button {
+  background-color: #B7931C;
+  color: black;
+}
+.edit-button:hover{
+  background-color: #ffc107
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.tenant-button {
+  background-color: #17a2b8;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 17px;
+}
+.property-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background:rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+}
+.property-card:hover{
+  transform: translateY(-6px);
+  transition: 0.2s;
+  box-shadow: 4px 4px 21px rgba(255, 255, 255, 0.3);
+}
+.property-photo {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.property-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.property-info {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.property-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.property-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.property-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.property-actions button {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.property-actions button:last-child {
+  margin-right: 0;
+}
+.properties-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.property-input[type="text"],
+.property-input[type="number"],
+.tenant-input[type="text"],
+.tenant-input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+}
+
+/*tenant page*/
+.tenant-container {
+  padding: 7px 5px;
+  border-radius: 9px;
+  background: rgb(255,255,255,0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 17px;
+  width: 90%;
+  box-shadow: 3px 4px 12px rgba(0,0,0,0.4);
+}
+
+.tittle {
+  font-style: italic;
+  font-size: 31px;
+  margin:15px 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button-go-back,
+.button-add-tenant,
+.button-save-button,
+.button-cancel-button{
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-save-button,
+.button-cancel-button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.button-save-button{
+  background-color: darkorange;
+}
+.button-cancel-button{
+  color: black;
+}
+.button-go-back,
+.button-add-tenant
+{
+  font-weight: bold;
+}
+.button-go-back {
+  position: absolute;
+  left: 7px;
+  background-color: #007bff;
+}
+
+.button-add-tenant {
+  background-color: #28a745;
+}
+.tenant-list {
+  width: 100%;
+  height: 547px;
+  overflow-y: auto;
+}
+.tenant-list table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+.tenant-list th,
+.tenant-list td {
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  width: 220px;
+}
+.tenant-list th{
+  position: sticky;
+  top: 0;
+  background-color: #708090;
+}
+
+.button-edit-button,
+.button-delete-button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.button-edit-button {
+  background-color: #ffc107;
+}
+
+.button-delete-button {
+  background-color: #dc3545;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.documents-input {
+  margin-bottom: 5px;
+}
+
+.photo-input {
+  margin-bottom: 5px;
+}
+
+.photo-preview {
+  width: 50px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.button-go-back:hover,
+.button-add-tenant:hover,
+.button-edit-button:hover,
+.button-delete-button:hover,
+.button-cancel-button:hover,
+.button-save-button:hover{
+  box-shadow: inset -4px -3px 8px rgba(0,0,0,0.4);
+}
+
+/*admin page*/
+
+.admin-page {
+  border-radius: 12px;
+  height: 85%;
+  width: 91%;
+  background-color: #F0F0F0;
+  padding: 20px;
+}
+
+.admin-content {
+  margin: 0 auto;
+  overflow: auto;
+}
+.admin-content-box{
+  display: flex;
+}
+
+.admin-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-content h2 {
+  font-size: 1.75rem;
+  color: #555;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.admin-exit-button {
+  position: absolute;
+  top: 133px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.admin-exit-button:hover {
+  background-color: #c9302c;
+}
+.admin-left{
+ padding: 0 5px;
+ width: 60%;
+}
+.admin-right{
+  padding: 0 5px;
+  width: 40%;
+}
+.admin-list {
+  border: 2px solid #ddd;
+  max-height: 157px;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.admin-list-payment{
+  border: 2px solid #ddd;
+  max-height: 416px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.admin-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.admin-list-item p {
+  margin: 0;
+  color: #333;
+}
+
+.admin-delete-button, .admin-mark-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color    : #fff;
+}
+
+.admin-delete-button {
+  background-color: #d9534f;
+}
+
+.admin-delete-button:hover {
+  background-color: #c9302c;
+}
+
+.admin-mark-button {
+  background-color: #5cb85c;
+}
+
+.admin-mark-button:hover {
+  background-color: #4cae4c;
+}
+.admin-login-error-message{
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.admin-error-message {
+  color: #d9534f;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+}
+
+
+/*footer*/
+
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  background: #e1e1e1;
+  color: #f60838;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+.footer-icons i:hover {
+  background: #f60838;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.Footer h3{
+  color: white;
+}
+.Footer h3 span{
+  color: #f60838;
+}
+.Footer h4 {
+  font-size: 16px;
+  color: #f60838;
+}
+.quickLinks ul {
+  list-style: none;
+  padding-left: 0;
+}
+.quickLinks ul li {
+  list-style: none;
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+.quickLinks ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.06rem;
+}
+.quickLinks ul a:hover{
+  color: #f60838;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.contact p {
+  color: white;
+  font-weight: 300;
+  padding: 0.1rem 0;
+  font-size: 1rem;
+}
+.contact i {
+  padding-right: 0.5rem;
+}
+.Last-footer {
+  background: lightgray;
+  text-align: center;
+  padding: 0;
+
+}
+.Last-footer p {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-bottom: 2px;
+}
+.nameAndSocial{
+  width: 32%;
+}
+.quickLinks{
+  width: 32%;
+}
+.contact{
+  width: 32%;
+}
+.footer-container{
+  margin-top: 7px;
+  width: auto;
+  text-align: center;
+  justify-content: space-between;
+  background: #282c34;
+  padding: 37px 16px;
+  display: flex;
+  gap: 30px;
+}
+
+/*contactUs*/
+.contact-map{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.contactUs-details{
+  align-self: center;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  background-color: rgb(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  top: 20%;
+  width: 90%;
+  border-radius: 12px;
+}
+.map{
+  width: 100%;
+}
+.form-group label{
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+.response-message{
+  color: white;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+textarea#query{
+  margin-top: 7px;
+  background: rgb(0,0,0,0.8);
+  border: none;
+  color: white;
+  font-weight: normal;
+  width: 70%;
+  border-radius: 5px;
+}
+.gmap{
+  width: 95%;
+  align-self: center;
+}
+.contact-form-button{
+  margin-top: 10px;
+  border: none;
+  background-color: dimgray;
+  color: white;
+  font-size: large;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.contact-form-button:hover{
+  background-color: cornflowerblue;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/*error messages*/
+
+.error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
