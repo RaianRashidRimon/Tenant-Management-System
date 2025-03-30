@@ -30,3 +30,36 @@ This system provides the following core functionalities:
 <div align="center">
   <img src="UI & Use Case Diagram/Use Case Diagram.png" alt="Use Case Diagram" width="500"/>
 </div>
+
+## 🖥️ User Interface & Webpages
+- **Sign-Up**  
+<div align="center">
+  <img src="UI & Use Case Diagram/Signup.jpg" alt="signup" style="width: 850px;"/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
