@@ -37,10 +37,17 @@ This system provides the following core functionalities:
   <img src="UI & Use Case Diagram/Signup.jpg" alt="signup" style="width: 850px;"/>
 </div>
 
-- **Login**  
+- **Login & Homepage**  
 <div align="center">
   <img src="UI & Use Case Diagram/Login page.jpg" alt="login" style="width: 850px;"/>
 </div>
+
+
+
+
+
+
+
 
 
 
