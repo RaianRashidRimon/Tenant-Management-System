@@ -47,7 +47,7 @@ This system provides the following core functionalities:
   <img src="UI & Use Case Diagram/Properties.jpg" alt="properties" style="width: 850px;"/>
 </div>
 
-- **Adding New Properties**
+- **Add New Properties**
 <div align="center">
   <img src="UI & Use Case Diagram/Adding New Property.jpg" alt="add properties" style="width: 850px;"/>
 </div>
@@ -57,7 +57,7 @@ This system provides the following core functionalities:
   <img src="UI & Use Case Diagram/Tenants.jpg" alt="tenants" style="width: 850px;"/>
 </div>
 
-- **View Tenants**
+- **Add New Tenants**
 <div align="center">
   <img src="UI & Use Case Diagram/Adding New Tenant.jpg" alt="add tenants" style="width: 850px;"/>
 </div>
