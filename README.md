@@ -42,6 +42,10 @@ This system provides the following core functionalities:
   <img src="UI & Use Case Diagram/Login page.jpg" alt="login" style="width: 850px;"/>
 </div>
 
+- **View Properties**
+<div align="center">
+  <img src="UI & Use Case Diagram/Properties.jpg" alt="properties" style="width: 850px;"/>
+</div>
 
 
 
