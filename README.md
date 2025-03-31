@@ -52,7 +52,10 @@ This system provides the following core functionalities:
   <img src="UI & Use Case Diagram/Adding New Property.jpg" alt="login" style="width: 850px;"/>
 </div>
 
-
+- **View Tenants**
+<div align="center">
+  <img src="UI & Use Case Diagram/Tenants.jpg" alt="tenants" style="width: 850px;"/>
+</div>
 
 
 
