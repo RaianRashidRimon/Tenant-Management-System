@@ -78,7 +78,11 @@ This system provides the following core functionalities:
 </div>
 
 
-
+## 📥 Installation & Setup
+### Prerequisites
+Ensure you have the following installed:
+- Node.js and npm (for running the React app)
+- A Firebase project (set up in Firebase Console)
 
 
 
