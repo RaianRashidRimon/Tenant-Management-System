@@ -1,6 +1,6 @@
 # 🏠 Tenant Management System
 ## 📌 Overview
-The Tenant Management System is a web-based platform designed exclusively for landlords and property owners to efficiently track and manage their rental properties, tenants, lease agreements, and payments. This system provides a centralized dashboard to store tenant records, monitor rent collection, handle maintenance requests, and generate reports for better rental management.
+The Tenant Management System is a web-based platform designed exclusively for landlords and property owners to efficiently track and manage their rental properties, tenants, lease agreements, and payments. This system provides a centralized dashboard to store tenant records, monitor rent collection, handle maintenance requests.
 
 Key benefits:
 
