@@ -78,14 +78,20 @@ This system provides the following core functionalities:
 </div>
 
 
-## 📥 Installation & Setup
-### Prerequisites
-Ensure you have the following installed:
-- Node.js and npm (for running the React app)
-- A Firebase project (set up in Firebase Console)
+## 🤝 Contributing
+We welcome contributions! To contribute:
+1. Fork the repository.
+2. Create a new feature branch:
 
+           `git checkout -b feature-new-feature`
 
+3. Commit changes and push:
 
+           `git commit -m "Add new feature"`
+  
+           `git push origin feature-new-feature`
+
+4. Submit a pull request.
 
 
 
