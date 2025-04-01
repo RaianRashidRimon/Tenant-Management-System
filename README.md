@@ -62,11 +62,20 @@ This system provides the following core functionalities:
   <img src="UI & Use Case Diagram/Adding New Tenant.jpg" alt="add tenants" style="width: 850px;"/>
 </div>
 
+- **Update Tenants Payments**
+<div align="center">
+  <img src="UI & Use Case Diagram/Tenant Payments.jpg" alt="add tenants" style="width: 850px;"/>
+</div>
 
+- **Landlord Query Submits**
+<div align="center">
+  <img src="UI & Use Case Diagram/Query submit.jpg" alt="add tenants" style="width: 850px;"/>
+</div>
 
-
-
-
+- **Admin Panel**
+<div align="center">
+  <img src="UI & Use Case Diagram/Admin Panel.jpg" alt="add tenants" style="width: 850px;"/>
+</div>
 
 
 
