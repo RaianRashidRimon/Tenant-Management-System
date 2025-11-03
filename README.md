@@ -1,5 +1,5 @@
 # 🏠 Tenant Management System
-## 📌 Overview
+## Overview
 The Tenant Management System is a web-based platform designed exclusively for landlords and property owners to efficiently track and manage their rental properties, tenants, lease agreements, and payments. This system provides a centralized dashboard to store tenant records, monitor rent collection, handle maintenance requests.
 
 Key benefits:
@@ -10,7 +10,7 @@ Key benefits:
 
 ✅ Secure handling of lease agreements and transactions.
 
-## ⚙️ Features
+## Features
 This system provides the following core functionalities:
 - Secure login/logout functionality for landlords using Firebase Authentication.
 - Add, edit, and delete rental properties with details like location, rent amount, and availability.
@@ -18,7 +18,7 @@ This system provides the following core functionalities:
 - Query or Maintenance Requests.
 - Separate admin panel.
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Frontend:**
    + React.js (for UI)
    + CSS 
@@ -26,12 +26,12 @@ This system provides the following core functionalities:
     + Firebase Authentication
     + Firebase Firestore
     + Firebase Storage
-## 📌 Use Case Diagram
+## Use Case Diagram
 <div align="center">
   <img src="UI & Use Case Diagram/Use Case Diagram.png" alt="Use Case Diagram" width="500"/>
 </div>
 
-## 🖥️ User Interface & Webpages
+## User Interface & Webpages
 - **Sign-Up**  
 <div align="center">
   <img src="UI & Use Case Diagram/Signup.jpg" alt="signup" style="width: 850px;"/>
@@ -78,7 +78,7 @@ This system provides the following core functionalities:
 </div>
 
 
-## 🤝 Contributing
+## Contributing
 We welcome contributions! To contribute:
 1. Fork the repository.
 2. Create a new feature branch:
